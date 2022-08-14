@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace HashTable
 {
+
     class FindFrequency
     {
         public static void Frequency(string[] para)
@@ -15,7 +16,7 @@ namespace HashTable
                         .Where(group => group.Count() > 1)
                         .Select(group => group.Key);
 
-            Console.WriteLine("The Frequency of words are :");
+            Console.WriteLine("\nThe Frequency is :\n");
             foreach (var i in duplicateKeys)
             {
                 int count = 0;
@@ -31,3 +32,4 @@ namespace HashTable
         }
     }
 }
+
